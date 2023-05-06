@@ -100,6 +100,34 @@ class WelcomeScreen extends StatelessWidget {
                             ),
                       ),
                     ),
+                    SizedBox(height: 60),
+                    //crear boton
+                    Material(
+                      color: Color(0xFF674AFF),
+                      borderRadius:
+                          BorderRadius.circular(10), //hacer el boron circular
+                      child: InkWell(
+                        //widget para darle animación al boton
+                        onTap:
+                            () {}, //es la función que realiza el boton al darle click
+                        //se crea el boton
+                        child: Container(
+                          //relleno de 15px inferior, superior y 80px en la izquierda y derecha
+                          padding: EdgeInsets.symmetric(
+                              vertical: 15, horizontal: 80),
+                          child: Text(
+                            "Empezar",
+                            //cambiarle el color y tamaño del texto del boton
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
